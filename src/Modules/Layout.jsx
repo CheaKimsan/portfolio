@@ -1,8 +1,15 @@
-const layout = ()=>{
-    return(
+import Navbar from "./Components/Navbar";
+import {Outlet} from "react-router-dom";
+import Footer from "./Components/Footer";
+
+const layout = () => {
+    return (
         <div>
-            <h1>Layout</h1>
+            <Navbar/>
+            <Outlet/>
+            <Footer/>
         </div>
+
     )
 }
 export default layout;
