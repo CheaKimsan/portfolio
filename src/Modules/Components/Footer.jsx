@@ -7,9 +7,8 @@ const Footer = () => {
         <div className="footer border-top">
             <div className="container mt-5 mb-5">
                 <div className="row">
-                    {/* First Column */}
                     <div className="col-12 col-md-6 mb-4 mb-md-0">
-                        <div className="d-flex flex-column flex-sm-row align-items-center gap-4">
+                        <div className="d-flex flex-column flex-sm-row align-items-center gap-5">
                             <img
                                 className="rounded-circle object-fit-cover"
                                 src={image}
@@ -20,20 +19,21 @@ const Footer = () => {
                             <div className="text-center text-sm-start">
                                 <h1 className="fs-4">Chea Kimsan</h1>
                                 <span>Front-End Developer</span>
-                                <div className="icon-nav mt-3 d-flex justify-content-center justify-content-sm-start gap-3">
-                                    <Link to="" className="icon"><FaLinkedin /></Link>
-                                    <Link to="" className="icon"><FaGitlab /></Link>
-                                    <Link to="" className="icon"><FaGithub /></Link>
+                                <div
+                                    className="icon-nav mt-3 d-flex justify-content-center justify-content-sm-start gap-3">
+                                    <Link to="" className="icon"><FaLinkedin/></Link>
+                                    <Link to="" className="icon"><FaGitlab/></Link>
+                                    <Link to="" className="icon"><FaGithub/></Link>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Second Column */}
                     <div className="col-12 col-md-6">
                         <div className="text-center text-md-start">
-                            <h1 className="fs-4">Social On <FaArrowTurnDown /></h1>
-                            <div className="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start gap-5 mt-3">
+                            <h1 className="fs-4">Social On <FaArrowTurnDown/></h1>
+                            <div
+                                className="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start gap-5 mt-3">
                                 <div className="email">
                                     <h5>Email</h5>
                                     <span>cheakimsan061789705@gmail.com</span>
@@ -44,6 +44,11 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className={'row border-top mt-5'}>
+                    <div className={'col'}>
+
                     </div>
                 </div>
             </div>

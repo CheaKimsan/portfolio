@@ -62,6 +62,30 @@
     border-radius: 5px;
 }
 
+.skill h1 {
+    position: relative; /* Allows positioning of the underline relative to the heading */
+    display: inline-block;
+    line-height: 1.3rem;
+    margin-left: 3.5rem;
+    font-weight: 700;
+}
+
+.underline2 {
+    width: 80px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: green;
+    margin:auto;
+}
+.underline3 {
+    width: 100px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: indigo;
+    margin: auto;
+}
+
+
 .available-work{
     background-color: rgb(33, 37, 81) !important;
     color: white;
@@ -102,7 +126,9 @@
     font-size: 1.8rem;
 }
 
-
+.card{
+    background-color: inherit !important;
+}
 @media only screen and (min-width: 600px){
     .available-work{
          margin-top: 50px;
@@ -131,5 +157,23 @@
     }
     .available-work{
         margin-top: 50px;
+    }
+}
+.card{
+    box-shadow: rgba(3, 214, 109, 0.3) 0px 0px 0px 3px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgb(3, 214, 109) 0px 0px 0px 5px;
+}
+
+.icon-skill svg{
+    font-size: 5rem ;
+}
+@media (max-width: 992px) {
+    .card {
+        display: flex;
+        margin: 10px 35px; /* Add spacing between cards */
+        width: 80%; /* Adjust card width for small screens */
     }
 }
