@@ -4,7 +4,6 @@ import React, {useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CardGrid from "./CardGrid";
-import CountUp from "react-countup";
 import CountNum from "./CountNum";
 
 const HomePage = () => {
@@ -80,7 +79,7 @@ const HomePage = () => {
                 <div className="underline5"></div>
                 <CardGrid/>
             </section>
-            <section >
+            <section>
                 <CountNum></CountNum>
             </section>
 

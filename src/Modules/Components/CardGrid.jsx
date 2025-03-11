@@ -1,10 +1,10 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import {Card } from "react-bootstrap";
 import imgA from "../../Assets/Image/dashboard.png";
 import imgB from "../../Assets/Image/air_bnb.png";
 import imgC from "../../Assets/Image/pro_1.png";
 import imgD from "../../Assets/Image/Demo_html.png"
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const cardData = [
     { id: 1, img: imgA, text: "Dashboard project showcasing analytics." ,link : "/"},
