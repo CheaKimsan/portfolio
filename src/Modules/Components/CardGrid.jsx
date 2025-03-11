@@ -1,13 +1,13 @@
 import React from "react";
 import {Card } from "react-bootstrap";
-import imgA from "../../Assets/Image/dashboard.png";
+import dashboardImage from '../../Assets/Image/dashboard.png';
 import imgB from "../../Assets/Image/air_bnb.png";
 import imgC from "../../Assets/Image/pro_1.png";
 import imgD from "../../Assets/Image/Demo_html.png"
 import {Link} from "react-router-dom";
 
 const cardData = [
-    { id: 1, img: imgA, text: "Dashboard project showcasing analytics." ,link : "/"},
+    { id: 1, img: dashboardImage, text: "Dashboard project showcasing analytics." ,link : "/"},
     { id: 2, img: imgB, text: "Airbnb clone with booking functionality.",link:'/' },
     { id: 3, img: imgC, text: "Professional portfolio website." , link: '/'},
     { id: 4, img: imgD, text: "Demo Project Html" , link: 'https://portfolio.kiloit.org/gen2-reactjs/Chea+Kimsan/first-project-san/baker.html'}
