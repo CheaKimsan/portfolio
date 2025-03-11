@@ -1,19 +1,21 @@
-import {Link} from "react-router-dom";
-import {FaGithub, FaGitlab, FaLinkedin} from "react-icons/fa6";
+import {Link, NavLink} from "react-router-dom";
+import {sci} from "../../Constants/Card";
 
 const navbar = () => {
     return <>
         <div className={'container mt-5'}>
             <nav className="navbar navbar-light text-light">
                 <div className="container">
-                    <div className="navbar-brand text-light" to="#">
+                    <NavLink className="navbar-brand text-light" to={'/'}>
                         <h1 className={'nav-name'}>Chea Kimsan  🧑🏻‍💻</h1>
-                    </div>
+                    </NavLink>
 
                     <div className={'icon-nav'}>
-                        <Link to={''} className={'icon'}><FaLinkedin/></Link>
-                        <Link to={''} className={'icon'}><FaGitlab/></Link>
-                        <Link to={''} className={'icon'}><FaGithub/></Link>
+                        {
+                            sci.map(({id,icon,link},index)=>(
+                                <Link to={link} key={index} className="icon">{icon}</Link>
+                            ))
+                        }
                     </div>
 
                 </div>

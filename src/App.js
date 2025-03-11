@@ -4,6 +4,8 @@ import './App.css';
 import HomePage from "./Modules/Components/HomePage";
 import Skill from "./Modules/Components/Skill";
 import {useEffect} from "react";
+import Portfolio from "./Modules/Components/Portfolio";
+import About from "./Modules/Components/About";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path={'/'} element={<Layout/>}>
             <Route path={'/'} element={<HomePage/>}/>
             <Route path={'/skill'} element={<Skill/>}/>
+            <Route path={'/portfolio'} element={<Portfolio/>}/>
+            <Route path={'/about-me'} element={<About/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
