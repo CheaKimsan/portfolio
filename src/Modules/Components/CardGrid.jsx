@@ -33,9 +33,10 @@ const CardGrid = () => {
 
                                 {/* Loop through buttons and render them */}
                                 {card.buttons.map((btn, btnIndex) => (
-                                    <button key={btnIndex} className="btn peasa ms-2">
-                                        {btn}
-                                    </button>
+                                    <button key={btnIndex} className="btn peasa ms-2 mt-2 mt-sm-0">
+                                    {btn}
+                                </button>
+                                
                                 ))}
                             </Card.Body>
                         </Card>
