@@ -3,13 +3,21 @@ import Layout from "./Modules/Layout";
 import './App.css';
 import HomePage from "./Modules/Components/HomePage";
 import Skill from "./Modules/Components/Skill";
-import {useEffect} from "react";
+import { useEffect } from "react";
 import Portfolio from "./Modules/Components/Portfolio";
 import About from "./Modules/Components/About";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function App() {
     useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            offset: 200,
+            once: false,
+        });
+
         changeFavicon("/solid-code.ico");
     }, []);
 

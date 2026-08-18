@@ -1,24 +1,28 @@
 import React from "react";
-import {Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import dashboardImage from '../../Assets/Image/dashboard.png';
 import imgB from "../../Assets/Image/air_bnb.png";
 import imgC from "../../Assets/Image/pro_1.png";
 import imgD from "../../Assets/Image/view.png"
 import imgE from "../../Assets/Image/localhost_3000_dashboard.png"
 import imgF from "../../Assets/Image/kilo_health.png"
-import {Link} from "react-router-dom";
+import imgG from "../../Assets/Image/preview.webp"
+import { Link } from "react-router-dom";
 
 const cardData = [
-    { id: 1, img: dashboardImage, text: "Dashboard project showcasing analytics.", buttons: ["HTML", "CSS","PHP","MYSQL"] },
-    { id: 2, img: imgD, text: "CMS Information Project", buttons: ["PHP","HTML","Bootstrap"] }, // Changed title here
-    { id: 3, img: imgB, text: "Airbnb clone with booking functionality.", buttons: ["React.Js","Bootsrtap","CSS"] },
-    { id: 4, img: imgC, text: "Demo Project Html", buttons: ["HTML","CSS","Bootstrap"] },
-    { id: 5, img: imgE, text: "Dashboard project showcasing analytics.", buttons: ["React.Js","Axios","Redux"] },
-    { id: 6, img: imgF, text: "Kilo Health", buttons: ["React.Js","Axios","Redux"] },
+    { id: 1, img: dashboardImage, text: "Dashboard project showcasing analytics.", buttons: ["HTML", "CSS", "PHP", "MYSQL"], status: "done" },
+    { id: 2, img: imgD, text: "CMS Information Project", buttons: ["PHP", "HTML", "Bootstrap"], status: "done" },
+    { id: 3, img: imgB, text: "Airbnb clone with booking functionality.", buttons: ["React.Js", "Bootsrtap", "CSS"], status: "done" },
+    { id: 4, img: imgC, text: "Demo Project Html", buttons: ["HTML", "CSS", "Bootstrap"], status: "done" },
+    { id: 5, img: imgE, text: "Dashboard project showcasing analytics.", buttons: ["React.Js", "Axios", "Redux"], status: "done" },
+    { id: 6, img: imgF, text: "Kilo Health", buttons: ["React.Js", "Axios", "Redux"], status: "done" },
+    { id: 7, img: imgG, text: "Drone System Project", buttons: ["Angular","Web-Socket", "Firebase"], status: "in-progress" },
 ];
 
-
-
+const statusLabel = {
+    done: "Done",
+    "in-progress": "In Progress",
+};
 
 const CardGrid = () => {
     return (
@@ -26,17 +30,25 @@ const CardGrid = () => {
             <div className="row justify-content-center">
                 {cardData.map((card) => (
                     <div key={card.id} className="col-md-4 d-flex justify-content-center mt-3">
-                        <Card className="card-port p-1 rounded-3" style={{ width: "100%" }}>
+                        <Card className="card-port p-1 rounded-3 position-relative" style={{ width: "100%" }}>
+                            {/* Status badge */}
+                            <span
+                                className={`badge position-absolute top-0 end-0 m-2 ${
+                                    card.status === "done" ? "bg-success" : "bg-warning text-dark"
+                                }`}
+                                style={{ zIndex: 2 }}
+                            >
+                                {statusLabel[card.status]}
+                            </span>
+
                             <Card.Img className="object-fit-cover" variant="top" src={card.img} height="200px" />
                             <Card.Body>
                                 <Card.Text>{card.text}</Card.Text>
-
                                 {/* Loop through buttons and render them */}
                                 {card.buttons.map((btn, btnIndex) => (
                                     <button key={btnIndex} className="btn peasa ms-2 mt-2 mt-sm-0">
-                                    {btn}
-                                </button>
-                                
+                                        {btn}
+                                    </button>
                                 ))}
                             </Card.Body>
                         </Card>

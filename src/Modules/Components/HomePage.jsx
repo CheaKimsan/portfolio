@@ -7,18 +7,6 @@ import CardGrid from "./CardGrid";
 import CountNum from "./CountNum";
 
 const HomePage = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            offset: 200,
-            once: true,
-        });
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    }, []);
 
     return (
         <>
