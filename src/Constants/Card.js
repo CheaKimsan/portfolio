@@ -1,6 +1,6 @@
-import { FaHtml5, FaCss3, FaBootstrap, FaJs, FaReact, FaPhp, FaTelegram, FaLaravel, FaNode } from 'react-icons/fa';
-import { SiRedux, SiFirebase, SiGo, SiAngular, SiTailwindcss, SiMysql, SiMongoose, SiMongodb, SiPostman, SiGithub, SiGitlab, SiMinio } from "react-icons/si";
-import { FaGithub, FaGitlab, FaLinkedin } from "react-icons/fa6";
+import { FaBootstrap, FaJs, FaReact, FaTelegram, FaNode } from 'react-icons/fa';
+import { SiFirebase, SiGo, SiAngular, SiTailwindcss, SiMysql} from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoTypescript } from 'react-icons/bi';
 import { DiPostgresql } from 'react-icons/di';
@@ -13,27 +13,21 @@ const sci = [
 ]
 
 const card = [
-    { icon: <FaHtml5 />, name: "HTML5" },
     { icon: <FaBootstrap />, name: "Bootstrap" },
     { icon: <SiTailwindcss />, name: "Tailwind" },
     { icon: <FaJs />, name: "JavaScript" },
     { icon: <FaReact />, name: "ReactJS " },
     {icon: <BiLogoTypescript />, name: "ReactTsx"},
     { icon: <SiAngular />, name: "Angular" },
-    { icon: <SiRedux />, name: "Redux" },
-    { icon: <FaPhp />, name: "PHP" },
-    { icon: <FaLaravel />, name: "Laravel" },
     { icon: <FaNode />, name: "NodeJS" },
     { icon: <SiGo />, name: "Golang" },
-    { icon: <SiMongodb />, name: "Mongoose" },
     { icon: <SiMysql />, name: "Mysql" },
     { icon: <DiPostgresql />, name: "PostgreSQL" },
     { icon: <SiFirebase />, name: "Firebase" },
 
-    { icon: <SiPostman />, name: "Postman" },
-    { icon: <SiGithub />, name: "Github" },
-    { icon: <SiGitlab />, name: "Gitlab" },
-    { icon: <SiMinio />, name: "Minio" },
+    // { icon: <SiPostman />, name: "Postman" },
+    // { icon: <SiGithub />, name: "Github" },
+    // { icon: <SiGitlab />, name: "Gitlab" },
     // { icon: <SiMinio />, name: "Minio" },
 
 ];
